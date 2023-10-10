@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.item-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+.item-name {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin: 0   ;
+}
+
+.item-category {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    padding: 20px 0;
+    margin-bottom: -5px;
+}
+
+.card-information {
+    background-color: white;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.add-button {
+    align-self: center;
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.add-button img {
+    padding-right: 10px;
+}
+
+.price  {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-img {
+    display: none;
+}
+.desktop-img {
+    display: block;
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+@media (max-width: 765px) {
+    .desktop-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+        width: 21.75em;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .card {
+        flex-direction: column;
+    }
+
+    .card-information {
+        width: 18em;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
